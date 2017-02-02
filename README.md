@@ -12,6 +12,8 @@ tar -zxvf 170202.tar.gz
 mongodump -d hz -o /db/170202
 
 # 还原数据库
+http://stackoverflow.com/questions/41036442/mongodb-dump-from-3-2-restore-with-3-4-error-index-save-null
+
 mongorestore --noIndexRestore -d hz /db/170202/hz
 mongorestore --noIndexRestore -d gz /db/170202/gz
 mongorestore --noIndexRestore -d sz /db/170202/sz
