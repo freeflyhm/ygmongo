@@ -1,5 +1,7 @@
 docker run -d -v /"$PWD"/db:/db --name ygmongo mongo:latest
 
+docker exec -it ygmongo /bin/sh
+
 # 压缩
 tar -zcvf 17xxxx.tar.gz /db/17xxxx
 
