@@ -10,4 +10,7 @@ tar -zxvf 17xxxx.tar.gz
 mongodump -d hz -o /db/17xxxx
 
 # 还原数据库
-mongorestore -d hz /copy/17xxxx/hz
+mongorestore -d hz /db/170202/hz
+mongorestore -d gz /db/170202/gz
+mongorestore -d sz /db/170202/sz
+mongorestore -d auth /db/170202/auth
